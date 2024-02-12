@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\15mim\\source\\repos\\Enterprise_Resturant_Project\\Services\\Applications.csproj": {}
+    "C:\\Users\\Acer\\Documents\\GitHub\\Enterprise_Resturant_Project\\Services\\Applications.csproj": {}
   },
   "projects": {
-    "C:\\Users\\15mim\\source\\repos\\Enterprise_Resturant_Project\\Models\\Models.csproj": {
+    "C:\\Users\\Acer\\Documents\\GitHub\\Enterprise_Resturant_Project\\Models\\Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\15mim\\source\\repos\\Enterprise_Resturant_Project\\Models\\Models.csproj",
+        "projectUniqueName": "C:\\Users\\Acer\\Documents\\GitHub\\Enterprise_Resturant_Project\\Models\\Models.csproj",
         "projectName": "Models",
-        "projectPath": "C:\\Users\\15mim\\source\\repos\\Enterprise_Resturant_Project\\Models\\Models.csproj",
-        "packagesPath": "C:\\Users\\15mim\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\15mim\\source\\repos\\Enterprise_Resturant_Project\\Models\\obj\\",
+        "projectPath": "C:\\Users\\Acer\\Documents\\GitHub\\Enterprise_Resturant_Project\\Models\\Models.csproj",
+        "packagesPath": "C:\\Users\\Acer\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Acer\\Documents\\GitHub\\Enterprise_Resturant_Project\\Models\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\15mim\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Acer\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,7 +26,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -64,6 +63,12 @@
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[8.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.1, )"
             }
           },
           "imports": [
@@ -86,20 +91,20 @@
         }
       }
     },
-    "C:\\Users\\15mim\\source\\repos\\Enterprise_Resturant_Project\\PriceCalculation\\Price.csproj": {
+    "C:\\Users\\Acer\\Documents\\GitHub\\Enterprise_Resturant_Project\\PriceCalculation\\Price.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\15mim\\source\\repos\\Enterprise_Resturant_Project\\PriceCalculation\\Price.csproj",
+        "projectUniqueName": "C:\\Users\\Acer\\Documents\\GitHub\\Enterprise_Resturant_Project\\PriceCalculation\\Price.csproj",
         "projectName": "Price",
-        "projectPath": "C:\\Users\\15mim\\source\\repos\\Enterprise_Resturant_Project\\PriceCalculation\\Price.csproj",
-        "packagesPath": "C:\\Users\\15mim\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\15mim\\source\\repos\\Enterprise_Resturant_Project\\PriceCalculation\\obj\\",
+        "projectPath": "C:\\Users\\Acer\\Documents\\GitHub\\Enterprise_Resturant_Project\\PriceCalculation\\Price.csproj",
+        "packagesPath": "C:\\Users\\Acer\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Acer\\Documents\\GitHub\\Enterprise_Resturant_Project\\PriceCalculation\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\15mim\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Acer\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -108,15 +113,14 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\15mim\\source\\repos\\Enterprise_Resturant_Project\\Models\\Models.csproj": {
-                "projectPath": "C:\\Users\\15mim\\source\\repos\\Enterprise_Resturant_Project\\Models\\Models.csproj"
+              "C:\\Users\\Acer\\Documents\\GitHub\\Enterprise_Resturant_Project\\Models\\Models.csproj": {
+                "projectPath": "C:\\Users\\Acer\\Documents\\GitHub\\Enterprise_Resturant_Project\\Models\\Models.csproj"
               }
             }
           }
@@ -150,20 +154,20 @@
         }
       }
     },
-    "C:\\Users\\15mim\\source\\repos\\Enterprise_Resturant_Project\\Services\\Applications.csproj": {
+    "C:\\Users\\Acer\\Documents\\GitHub\\Enterprise_Resturant_Project\\Services\\Applications.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\15mim\\source\\repos\\Enterprise_Resturant_Project\\Services\\Applications.csproj",
+        "projectUniqueName": "C:\\Users\\Acer\\Documents\\GitHub\\Enterprise_Resturant_Project\\Services\\Applications.csproj",
         "projectName": "Applications",
-        "projectPath": "C:\\Users\\15mim\\source\\repos\\Enterprise_Resturant_Project\\Services\\Applications.csproj",
-        "packagesPath": "C:\\Users\\15mim\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\15mim\\source\\repos\\Enterprise_Resturant_Project\\Services\\obj\\",
+        "projectPath": "C:\\Users\\Acer\\Documents\\GitHub\\Enterprise_Resturant_Project\\Services\\Applications.csproj",
+        "packagesPath": "C:\\Users\\Acer\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Acer\\Documents\\GitHub\\Enterprise_Resturant_Project\\Services\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\15mim\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Acer\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -172,18 +176,17 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\15mim\\source\\repos\\Enterprise_Resturant_Project\\Models\\Models.csproj": {
-                "projectPath": "C:\\Users\\15mim\\source\\repos\\Enterprise_Resturant_Project\\Models\\Models.csproj"
+              "C:\\Users\\Acer\\Documents\\GitHub\\Enterprise_Resturant_Project\\Models\\Models.csproj": {
+                "projectPath": "C:\\Users\\Acer\\Documents\\GitHub\\Enterprise_Resturant_Project\\Models\\Models.csproj"
               },
-              "C:\\Users\\15mim\\source\\repos\\Enterprise_Resturant_Project\\PriceCalculation\\Price.csproj": {
-                "projectPath": "C:\\Users\\15mim\\source\\repos\\Enterprise_Resturant_Project\\PriceCalculation\\Price.csproj"
+              "C:\\Users\\Acer\\Documents\\GitHub\\Enterprise_Resturant_Project\\PriceCalculation\\Price.csproj": {
+                "projectPath": "C:\\Users\\Acer\\Documents\\GitHub\\Enterprise_Resturant_Project\\PriceCalculation\\Price.csproj"
               }
             }
           }

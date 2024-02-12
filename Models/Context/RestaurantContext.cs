@@ -15,7 +15,7 @@ namespace Models.Context {
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder) {
             optionsBuilder
-                .UseInMemoryDatabase("TestDb");
+                .UseSqlServer("Server=ACER\\SQLEXPRESS;Database=Enterprise;Integrated Security=True;TrustServerCertificate=True");
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder) {

@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 namespace Models.Configurations {
     internal class DishConfiguration : IEntityTypeConfiguration<Dish> {
         public void Configure(EntityTypeBuilder<Dish> builder) {
-            builder.ToTable("Order");
+            builder.ToTable("Dish");
             builder.HasKey(k => k.Id);
             builder.HasOne(x => x.Order)
                 .WithMany(x => x.Dishes)

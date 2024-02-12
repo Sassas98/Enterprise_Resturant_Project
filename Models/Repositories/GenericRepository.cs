@@ -16,7 +16,6 @@ namespace Models.Repositories {
 
         public void Add(T entity) {
             _ctx.Set<T>().Add(entity);
-            _ctx.Entry(entity).State = Microsoft.EntityFrameworkCore.EntityState.Added;
         }
 
         public void Modify(T entity) {
@@ -44,7 +43,7 @@ namespace Models.Repositories {
                 .Reverse().FirstOrDefault();
             if (first != null)
                 return first.Id + 1;
-            else return 0;
+            else return 1;
         }
 
     }

@@ -17,6 +17,12 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Price", "PriceCalculation\P
 		{14BAC664-4F5E-4F57-AF39-360DF6BDC8C5} = {14BAC664-4F5E-4F57-AF39-360DF6BDC8C5}
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test", "Test\Test.csproj", "{8A787EB4-94EF-45A4-8E0B-0504B5BAF036}"
+	ProjectSection(ProjectDependencies) = postProject
+		{14BAC664-4F5E-4F57-AF39-360DF6BDC8C5} = {14BAC664-4F5E-4F57-AF39-360DF6BDC8C5}
+		{BC37BA07-4FDE-486A-8001-74F485BE2AF3} = {BC37BA07-4FDE-486A-8001-74F485BE2AF3}
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +45,10 @@ Global
 		{B00C7AA6-C97E-453F-9B46-0704D35BA875}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B00C7AA6-C97E-453F-9B46-0704D35BA875}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B00C7AA6-C97E-453F-9B46-0704D35BA875}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8A787EB4-94EF-45A4-8E0B-0504B5BAF036}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A787EB4-94EF-45A4-8E0B-0504B5BAF036}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A787EB4-94EF-45A4-8E0B-0504B5BAF036}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A787EB4-94EF-45A4-8E0B-0504B5BAF036}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
