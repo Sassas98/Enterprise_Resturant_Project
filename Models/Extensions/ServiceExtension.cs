@@ -13,15 +13,14 @@ using System.Threading.Tasks;
 namespace Models.Extensions {
     public static class ServiceExtension {
 
-        public static IServiceCollection AddRepositoryServices(this IServiceCollection services, string connectionString) {
+        public static IServiceCollection AddRepositoryServices(this IServiceCollection services, IConfiguration configuration) {
             services.AddDbContext<RestaurantContext>(conf => {
-                conf.UseSqlServer(connectionString);
+                conf.UseSqlServer(configuration.GetConnectionString("MyDbContext"));
             });
             services.AddScoped<UserRepository>();
             services.AddScoped<OrderRepository>();
             services.AddScoped<DishRepository>();
             return services;
-
         }
     }
 }

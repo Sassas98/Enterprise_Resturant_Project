@@ -22,7 +22,7 @@ namespace Models.Repositories {
             return _ctx.Users
                 .Include(x => x.Orders)
                 .Where(x => x.Email == email)
-                .FirstOrDefault(x => x.Password == password); ;
+                .FirstOrDefault(x => x.Password == password);
         }
 
         public bool AlreadyTaken(string email) {

@@ -17,9 +17,7 @@ namespace Models.Context {
 
         public RestaurantContext(DbContextOptions<RestaurantContext> config) : base(config) { }
 
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder) {
-            
-        }
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder) { }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder) {
             modelBuilder.ApplyConfigurationsFromAssembly(this.GetType().Assembly);
