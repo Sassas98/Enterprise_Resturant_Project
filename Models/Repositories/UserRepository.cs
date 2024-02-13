@@ -25,5 +25,9 @@ namespace Models.Repositories {
                 .FirstOrDefault(x => x.Password == password); ;
         }
 
+        public bool AlreadyTaken(string email) {
+            return _ctx.Users.Any(x => x.Email == email);
+        }
+
     }
 }

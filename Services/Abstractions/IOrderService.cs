@@ -1,4 +1,5 @@
 ﻿using Applications.Models.Dtos;
+using Applications.Models.Request;
 using Applications.Models.Response;
 using Models.Entities;
 using System;
@@ -10,9 +11,9 @@ using System.Threading.Tasks;
 namespace Applications.Abstractions {
     public interface IOrderService {
 
-        public OrderResponse AddOrder(OrderDto dto);
+        public OrderResponse AddOrder(OrderDto dto, int userId);
 
-        public IEnumerable<Order> GetOrders(int id, DateOnly from, DateOnly to);
+        public List<RecordOrderResponse> GetOrders(RecordOrderRequest request, int id);
 
 
     }

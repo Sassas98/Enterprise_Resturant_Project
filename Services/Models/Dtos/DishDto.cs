@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 
 namespace Applications.Models.Dtos {
     public class DishDto {
-        public string name { get; set; } = string.Empty;
-        public float price { get; set; }
-        public Dish_Type type { get; set; }
-        public int portions { get; set; }
+        public string Name { get; set; } = string.Empty;
+        public float Price { get; set; }
+        public Dish_Type Type { get; set; }
+        public int Portions { get; set; }
     }
 }

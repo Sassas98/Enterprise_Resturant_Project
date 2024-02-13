@@ -8,6 +8,6 @@ namespace Applications.Models.Response {
     public class OrderResponse {
         public float total {get;set;}
         public int idOrder {get;set;}
-        public ResponseState State { get; set; }
+        public string State { get; set; } = string.Empty;
     }
 }

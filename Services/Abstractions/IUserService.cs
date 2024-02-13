@@ -10,9 +10,9 @@ using System.Threading.Tasks;
 namespace Applications.Abstractions {
     public interface IUserService {
 
-        public void SignIn(UserDto dto);
+        public bool SignIn(UserDto dto);
 
-        public UserResponse LogIn(string email, string password);
+        public string LogIn(string email, string password);
 
     }
 }

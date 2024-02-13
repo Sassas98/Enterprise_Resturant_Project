@@ -13,9 +13,12 @@ namespace Models.Context {
         public DbSet<Order> Orders { get; set; }
         public DbSet<User> Users { get; set; }
 
+        public RestaurantContext() : base() { }
+
+        public RestaurantContext(DbContextOptions<RestaurantContext> config) : base(config) { }
+
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder) {
-            optionsBuilder
-                .UseSqlServer("Server=ACER\\SQLEXPRESS;Database=Enterprise;Integrated Security=True;TrustServerCertificate=True");
+            
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder) {

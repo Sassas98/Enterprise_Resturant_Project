@@ -10,7 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace Applications.Factories {
-    internal class OrderFactory : IFactory<Order, OrderDto, OrderResponse> {
+    internal class OrderFactory {
 
         private PriceCalculator _calculator;
 
@@ -18,20 +18,20 @@ namespace Applications.Factories {
             _calculator = new PriceCalculator();
         }
 
-        public Order CreateEntity(OrderDto dto, int id) {
+        public Order CreateEntity(OrderDto dto, int id, int userId) {
             List<Dish> dishes = dto.Dishes.Select(x => {
                 return new Dish() {
-                    name = x.name,
-                    price = x.price,
-                    portions = x.portions,
-                    type = x.type,
+                    Name = x.Name,
+                    Price = x.Price,
+                    Portions = x.Portions,
+                    Type = x.Type,
                     OrderId = id
                 };
             }).ToList();
             return new Order() {
                 Id = id,
                 Date = dto.Date,
-                UserId = dto.UserId,
+                UserId = userId,
                 Dishes = dishes
             };
         }
@@ -39,11 +39,11 @@ namespace Applications.Factories {
         public OrderResponse CreateResponse(Order? order) {
             if (order == null) {
                 return new OrderResponse() {
-                    State = ResponseState.ERROR
+                    State = ResponseState.ERROR.ToString()
                 };
             } else {
                 return new OrderResponse() {
-                    State = ResponseState.SUCCESS,
+                    State = ResponseState.SUCCESS.ToString(),
                     idOrder = order.Id,
                     total = _calculator.CalculatePrice(order.Dishes)
                 };

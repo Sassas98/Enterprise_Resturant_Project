@@ -1,17 +1,18 @@
+using Applications.Extensions;
+using Microsoft.Extensions.Configuration;
+using Models.Extensions;
+using RestAPI.Extensions;
+
 var builder = WebApplication.CreateBuilder(args);
-
-// Add services to the container.
-
-builder.Services.AddControllers();
+var connectionString = builder.Configuration.GetValue<string>("ConnectionStrings:MyDbContext");
+builder.Services.AddWebServices()
+    .AddSwaggerServices()
+    .AddSecurityServices(builder.Configuration)
+    .AddRepositoryServices(connectionString??"")
+    .AddApplicationServices();
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
-
-app.UseHttpsRedirection();
-
-app.UseAuthorization();
-
-app.MapControllers();
+app.AddWebMiddleware();
 
 app.Run();

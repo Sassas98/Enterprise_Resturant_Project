@@ -11,6 +11,6 @@ namespace Models.Entities {
         public string Surname { get; set; } = string.Empty;
         public string Password { get; set; } = string.Empty;
         public User_Role Role { get; set; }
-        public IEnumerable<Order> Orders { get; set; } = null!;
+        public virtual IEnumerable<Order> Orders { get; set; } = null!;
     }
 }

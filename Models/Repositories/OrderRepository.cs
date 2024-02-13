@@ -1,11 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Models.Context;
 using Models.Entities;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Models.Repositories {
     public class OrderRepository : GenericRepository<Order> {
@@ -22,6 +17,10 @@ namespace Models.Repositories {
                 .Include(x => x.User)
                 .Include(x => x.Dishes)
                 .ToList();
+        }
+
+        public List<Order> GetAllFromUser(int userId) {
+            return GetAll().Where(x => x.UserId == userId).ToList();
         }
 
     }

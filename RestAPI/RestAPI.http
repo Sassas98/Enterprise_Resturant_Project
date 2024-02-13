@@ -1,6 +1,6 @@
 @RestAPI_HostAddress = http://localhost:5016
 
-GET {{RestAPI_HostAddress}}/weatherforecast/
+GET {{RestAPI_HostAddress}}/swagger/index.html
 Accept: application/json
 
 ###

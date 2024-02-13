@@ -1,15 +1,17 @@
 ﻿using Applications.Abstractions;
 using Applications.Models.Dtos;
 using Applications.Models.Response;
+using Azure;
 using Models.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Claims;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace Applications.Factories {
-    internal class UserFactory: IFactory<User, UserDto, UserResponse> {
+    internal class UserFactory {
 
         public User CreateEntity(UserDto dto, int id) {
             return new User() {
@@ -26,15 +28,18 @@ namespace Applications.Factories {
         public UserResponse CreateResponse(User? user) {
             if(user == null) {
                 return new UserResponse() {
-                    State = ResponseState.ERROR
+                    State = ResponseState.ERROR.ToString()
                 };
             } else {
                 return new UserResponse() {
-                    State = ResponseState.SUCCESS,
-                    Id = user.Id,
-                    Name = user.Name,
-                    Email = user.Email,
-                    Surname = user.Surname
+                    State = ResponseState.SUCCESS.ToString(),
+                    Claims = [
+                         new Claim("Name", user.Name),
+                        new Claim("Surname", user.Surname),
+                        new Claim("Email", user.Email),
+                        new Claim("Role", user.Role.ToString()),
+                        new Claim("Id", user.Id.ToString())
+                    ]
                 };
             }
         }
